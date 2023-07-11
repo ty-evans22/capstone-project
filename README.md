@@ -38,3 +38,20 @@ each of the pages of the web application, each of which is pretty self-explanato
 on our project website.
 
 ## How to Run
+
+Because this web application was developed for the Iowa State University Molecular Biology Department, it is hosted on the Iowa State servers and the actual
+project cannot be accessed without a valid university login. As such, in order to view the project it must be ran locally which can be done as follows:
+
+**Note: Does not currently work, as the backend server is also located on the Iowa State servers and requires connecting with a VPN which also needs a valid ISU login. Will update soon with a locally ran server for the backend. For now, in order to view the web application feel free to check out the video walkthrough on our [project website](https://seniord.cs.iastate.edu/2023-Jan-11/) (located under the Reports tab and listed as Final Demo Video) as well as our other documents and reports which give a more detailed look into the project.**
+
+1. Either clone the project or simply download the zip file (in which case you will need to extract it as well)
+2. Once the project is copied to your local computer, open it within an IDE (I use Visual Studio Code for this, but the steps should be similar for other IDEs as well) **Note: You could also do it within the terminal but this is just the process I used during development of the project and am most familiar with**
+3. After the project is opened in the IDE, open up a terminal within the IDE and run the following commands:
+   `cd backend` (navigates the terminal to the backend folder)
+   `go run main.go` (starts running the backend)
+4. Now that the backend is running, in order to start the frontend simply open up another terminal within the IDE and run the following commands:
+   `cd frontend` (navigates the terminal to the frontend folder)
+   `npm install` (installs all of the required libraries for the frontend)
+   `npm start` (starts the frontend)
+5. Once the frontend starts running, it should automatically open up the web application in your default browser, but if it doesn't you can manually do so by opening your browser and navigating to *http://localhost:3000*
+6. The web application should now be running and you can feel free to explore each of the features. A more detailed account of the features can be found on our [project website](https://seniord.cs.iastate.edu/2023-Jan-11/).
